@@ -1,5 +1,12 @@
 <?php 
-include '../components/connect.php'
+include '../components/connect.php';
+
+session_start();
+
+if(isset($_POST['submit'])){
+    $name = $_POST['name'];
+    $name = filter_var($name,)
+}
 
 ?>
 
@@ -28,6 +35,11 @@ include '../components/connect.php'
         <input type="text" name="name" maxlength="20" required
         placeholder="enter your username" class="box" oninput="this.value = 
         this.value.replace(/\s/g, '')">
+
+        <input type="password" name="pass" maxlength="20" required
+        placeholder="enter your password" class="box" oninput="this.value = 
+        this.value.replace(/\s/g, '')">
+        <input type="submit" value="login now"  name="submit" class="btn">
     </form>
 
 

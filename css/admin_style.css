@@ -206,8 +206,37 @@ section{
     font-size: 2.5rem;
     cursor: pointer;
     color:var(--light-color);
+    margin-left: 1.7rem;
 }
 
+.header .flex .icons > *:hover{
+    color:vaar(--main-color);
+}
+
+.header .flex .profile{
+    position: absolute;
+    top: 120%; right:2rem;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border:var(--border);
+    border-radius: .5rem;
+    padding: 2rem;
+    padding-top: 1rem;
+    width: 30rem;
+    display: none;
+
+}
+
+.header .flex .profile p{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    color:var(--black);
+}
+
+#menu-btn{
+    
+}
 
 
 

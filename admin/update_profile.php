@@ -29,4 +29,35 @@ if(!isset($admin_id)){
 </head>
 <body>
 
-<?php include '../components/admin_header.php'?>
+<?php include '../components/admin_header.php' ?>
+
+<!-- register admin sections starts -->
+
+<section class="form-container">
+    <form action="" method="POST">
+        <h3>update profile </h3>
+
+        <input type="hidden" name="prev_pass" value="<?=$fetch_profile['password']; ?>">
+
+        <input type="text" name="name" maxlength="20" required
+        placeholder="enter your username" class="box" oninput="this.value = 
+        this.value.replace(/\s/g, '')">
+
+        <input type="password" name="new_pass" maxlength="20" required
+        placeholder="enter your new password" class="box" oninput="this.value = 
+        this.value.replace(/\s/g, '')">
+
+        <input type="password" name="confirm_pass" maxlength="20" required
+        placeholder="confirm your new password" class="box" oninput="this.value = 
+        this.value.replace(/\s/g, '')">
+        <input type="submit" value="update now"  name="submit" class="btn">
+    </form>
+
+<!-- register admin section ends -->
+
+
+<!-- custom js file link -->
+<script src="../js/admin_script.js"></script>
+
+</body>
+</html>

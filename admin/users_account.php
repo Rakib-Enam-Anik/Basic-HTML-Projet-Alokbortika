@@ -17,7 +17,7 @@ if(!isset($admin_id)){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>admins accounts</title>
+    <title>users accounts</title>
 
     <!-- font awesome cdn link -->
     <link rel="stylesheet" href="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/

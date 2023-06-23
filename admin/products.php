@@ -78,3 +78,24 @@ if(!isset($admin_id)){
 
 
 <!-- add products section ends -->
+
+<!-- show products section starts -->
+
+<section class="show-products">
+<div class="box-container">
+
+
+
+ <?php
+$show_product = $conn->prepare("SELECT * FROM 'products'");
+ $show_products->execute();
+ if($show_products>rowCount() > 0){
+
+ }else{
+    echo '<p class="empty"> no products added yet!</p>';
+ }
+ ?>
+
+</div>
+</section>
+<!-- show products section ends -->

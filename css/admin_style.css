@@ -132,6 +132,19 @@ section{
     font-weight:bolder;
 }
 
+.empty{
+    border:var(--border);
+    border-radius: .5rem;
+    background-color: var(--white);
+    padding:1.5rem;
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: var(--red);
+    box-shadow: var(--box-shadow);
+}
+
 .form-container{
     display: flex;
     align-items: center;

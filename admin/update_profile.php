@@ -41,8 +41,8 @@ if(isset($_POST['add_product'])){
     if($select_products->rowCount() > 0){
         $message[] = 'product name already exists!';
     }else{
-        $insert_product = $conn->prepare("INSERT INTO 'products'(name, details, price, image_01, image_02, image_03) ")
-        VALUES(?,?,?,?));
+        $insert_product = $conn->prepare("INSERT INTO 'products'(name, details, price, image_01, image_02, image_03)
+        VALUES(?,?,?,?,?,?)");
     }
 }
 

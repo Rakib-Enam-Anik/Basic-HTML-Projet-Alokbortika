@@ -338,4 +338,39 @@ section{
     }
 }
 
+.add-products form{
+    margin: 0 auto;
+    max-width: 70rem;
+    background-color: var(--white);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border:var(--border);
+    padding:2rem;
 
+}
+
+.add-products form .flex .input{
+  flex:1 1 30rem;
+}
+
+.add-products form .flex .inputBox .box{
+    background-color: var(--light-bg);
+    border:var(--border);
+    width: 100%;
+    background-color: var(--white);
+    padding:1.4rem;
+    font-size: 1.8rem;
+    color:var(--black);
+    border-radius: .5rem;
+    margin: 1rem;
+}
+
+.add-products form .flex .inputBox span{
+    font-size: 2rem;
+    color:var(--light-color);
+}
+
+.add-products form .flex .inputBox textarea{
+    height: 5.7rem;
+    resize: none;
+}

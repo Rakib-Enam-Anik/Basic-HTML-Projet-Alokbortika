@@ -74,12 +74,12 @@ if(isset($_GET['delete'])){
             </div>
             <div class="inputBox">
                 <span>image 02 (required) </span>
-                <input type="file" name="image_01" class="box" accept="image/jpg,
+                <input type="file" name="image_02" class="box" accept="image/jpg,
                  image/jpeg, image/png, image/webp" required>
             </div>
             <div class="inputBox">
                 <span>image 03 (required) </span>
-                <input type="file" name="image_01" class="box" accept="image/jpg,
+                <input type="file" name="image_03" class="box" accept="image/jpg,
                  image/jpeg, image/png, image/webp" required>
             </div>
             <div class="inputBox">

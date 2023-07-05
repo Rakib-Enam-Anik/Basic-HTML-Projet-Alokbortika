@@ -22,10 +22,10 @@ window.onscroll = ()=>{
 subImages = document.querySelectorAll('.update-product .image-container .sub-images img');
 mainImage = document.querySelectorAll('.update-product .image-container .main-image img');
 
-subImages.forEach(images =>){
+subImages.forEach(images =>{
     images.onclick = () =>{
         let src = images.getAttribute('src');
         mainImage.src = src;
     }
-}
+});
 

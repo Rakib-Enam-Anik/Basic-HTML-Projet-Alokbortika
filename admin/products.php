@@ -98,7 +98,8 @@ if(isset($_GET['delete'])){
 
 <!-- show products section starts -->
 
-<section class="show-products">
+<section class="show-products" style="padding-top: ">
+    <h1 class="heading">products added </h1>
 <div class="box-container">
 
 

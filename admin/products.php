@@ -118,7 +118,7 @@ $show_product = $conn->prepare("SELECT * FROM 'products'");
         <div class="flex-btn">
             <a href="update_product.php?update=<?= $fetch_products['id']; ?>"
             class="option-btn">update</a>
-            <a href="update_product.php?update=<?= $fetch_products['id']; ?>"
+            <a href="product.php?update=<?= $fetch_products['id']; ?>"
             class="option-btn" onclick="return confirm('delete this product?');">delete</a>
     </div>
     </div>

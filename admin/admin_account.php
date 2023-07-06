@@ -30,3 +30,33 @@ if(!isset($admin_id)){
 <body>
 
 <?php include '../components/admin_header.php'?>
+
+<!-- admins accounts section starts -->
+
+    <section class="accounts">
+        <h1 class="heading">admins accounts</h1>
+        <div class="box-container">
+            <?php
+            $select_account = $conn->prepare("SELECT * FROM 'admins'");
+            $select_account->execute();
+            if($select_account->rowCount() ? ){
+                while($fetch_accounts = $select_account->fetch(PDO::FETCH_ASSOC)){
+                    ?>
+                    <div class="box">
+                    <p>admin id: <?= $fetch_accounts['id']; ?> </p>
+                    <p> user name : <?= $fetch_accounts['user name']; ?> </p>
+                    </div>
+                    <?php
+
+                }
+                
+            }else{
+                echo '<p class="empty">no accounts available</p>';
+            }
+
+            ?>
+
+
+        
+
+<!-- admins accounts section ends -->

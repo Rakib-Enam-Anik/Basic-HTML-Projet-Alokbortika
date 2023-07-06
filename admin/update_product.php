@@ -158,6 +158,8 @@ if(isset($_POST['update'])){
                  <div class="flex-btn">
                     <input type="submit" value="update" class="btn" name="update">
                     <a href="products.php" class="option-btn">go back</a>
+                    <a href="placed_orders.php?update=<?= $fetch_orders['id']; ?>"
+            class="option-btn" onclick="return confirm('delete this product?');">delete</a>
         </div>
         </form>
     <?php

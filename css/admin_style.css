@@ -511,14 +511,28 @@ section{
 }
 
 .placed-orders .box-container .box p{
-    padding: .3rem 0;
-    line-height: 2;
+    padding: .5rem 0;
+    line-height: 1.5;
     font-size: 1.8rem;
     color:var(--black);
 }
 
 .placed-orders .box-container .box p span{
     color:var(--main-color);
+}
+
+
+
+.heading{
+    font-size: 3rem;
+}
+
+.show-products .box-container{
+    grid-template-columns: 1fr;
+}
+
+.placed-orders .box-container{
+    grid-template-columns: 1fr;
 }
 
 .placed-orders .box-container .box .drop-down{
@@ -533,14 +547,35 @@ section{
     border-radius: .5rem;
 }
 
-.heading{
-    font-size: 3rem;
+.accounts .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 33rem);
+    gap:1.5rem;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-.show-products .box-container{
-    grid-template-columns: 1fr;
+.accounts .box-container .box{
+    background-color: var(--white);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border:var(--border);
+    padding:1.5rem;
+    padding-top: 1rem;
+    text-align:center;
 }
 
-.placed-orders .box-container{
+.accounts .box-container .box p{
+    padding: .5rem 0;
+    //line-height: 1.5;
+    font-size: 1.8rem;
+    color:var(--black);
+}
+
+.accounts .box-container .box p span{
+    color:var(--main-color);
+}
+
+.accounts .box-container{
     grid-template-columns: 1fr;
 }

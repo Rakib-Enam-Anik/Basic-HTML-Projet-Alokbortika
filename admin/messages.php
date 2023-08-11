@@ -30,3 +30,22 @@ if(!isset($admin_id)){
 <body>
 
 <?php include '../components/admin_header.php'?>
+
+<!-- messages section starts -->
+   <section class="messages">
+    <h1 class="heading"> new messages</h1>
+      <div class="box-container">
+        <?php
+           $select_messages = $conn->prepare("SELECT * FROM 'messages'");
+           $select_messages->execute();
+           if($select_messages->rowCount() > 0){
+            while($fetch_messages = $select_messages->fetch(PDO::FETCH_ASSOC)){
+
+            }
+
+           }else{
+            echo '<p class="empty">you have no messages </p>';
+           }
+
+        ?>
+<!-- messages section ends -->

@@ -94,7 +94,8 @@ if(isset($_SESSION['user_id'])){
 <!-- home products section starts -->
 <section class="home-products">
     <h1 class="heading">latest products</h1>
-    <div class="products-slider">
+    <div class="swiper products-slider">
+        <div class="swiper-wrapper>
         <div class="w">
             <p class="empty">no products added yet!</p>
             <?php
@@ -110,8 +111,14 @@ if(isset($_SESSION['user_id'])){
                 <img src="uploaded_img/<?= $fetch_products['image_01']; ?>" class="image" alt="">
                 <div class="name"><?= $fetch_products['name']; ?></div>
                 <div class="flex">
-                    <div class="price">$<span><?= $fetch_products['price']; ?></span>/-</div>
+                    <div class="price">$<span><?= $fetch_products['price']; ?></span>/-  
                 </div>
+
+                <input type="number" name="qty"  class="qty" min="1" max="99" value="1"
+                 onkeypress="if(this.value.length == 2) return false;">
+                </div>
+                <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+                </form>
              <?php 
                 }
             }else{
